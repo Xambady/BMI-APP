@@ -1,0 +1,47 @@
+$color: rgb(156, 208, 225);
+@mixin flexCode(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background: $color;
+}
+
+header{
+ height: 50px;
+ background: $color;
+ font-size: 50px;
+ margin-bottom: 10px;
+ @include flexCode;
+
+}
+
+.screen{
+  height: 350px;
+  @include flexCode;
+  
+}
+
+.input-section{
+  @include flexCode;
+  flex-direction: column;
+  input{
+    width: 100px;
+    height: 20px;
+    margin-top: 4px;
+  }
+  input::placeholder{
+    text-align: center;
+  }
+  input[type= Submit]{
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    background: rgb(78, 144, 168);
+    appearance: none;
+    border-style: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.492), -2px -2px 10px rgba(0, 0, 0, 0.492);
+  }
+}

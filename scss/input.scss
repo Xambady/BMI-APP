@@ -1,26 +1,55 @@
-$color: rgb(156, 208, 225);
+$color:  rgb(78, 144, 168);
+$colorRed: rgba(120, 25, 25, 0.901); 
 @mixin flexCode(){
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 body{
-  background: $color;
+  background: radial-gradient( white 10%, rgb(118, 232, 226) );
+  background-attachment: fixed;
 }
 
+
+
 header{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
  height: 50px;
  background: $color;
- font-size: 50px;
+ font-size: 40px;
  margin-bottom: 10px;
  @include flexCode;
+ 
+
+ span{
+  color: $colorRed;
+  transform: rotate(20deg);
+  font-size: 50px;
+ }
+
+ .ownership{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  transform: rotate(0deg);
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.411);
+  color: $color;
+  
+ }
 
 }
 
 .screen{
   height: 350px;
   @include flexCode;
+  border-top: 0.2px solid $colorRed;
+  border-bottom: 0.2px solid $colorRed;
+  margin-top: 60px;
   
 }
 
@@ -28,9 +57,10 @@ header{
   @include flexCode;
   flex-direction: column;
   input{
-    width: 100px;
-    height: 20px;
+    width: 120px;
+    height: 30px;
     margin-top: 4px;
+    outline: none;
   }
   input::placeholder{
     text-align: center;
@@ -43,5 +73,15 @@ header{
     appearance: none;
     border-style: none;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.492), -2px -2px 10px rgba(0, 0, 0, 0.492);
+    font-size: 30px;;
   }
+}
+
+footer{
+  position: fixed;
+  background-color: $color;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  @include flexCode;
 }

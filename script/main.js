@@ -1,14 +1,14 @@
-// import { renderInfoContainer } from "./function"; 
+import {data} from "./data.js";
+import { renderInfoContainer } from "./function.js"; 
+
 
 let infoButton = document.querySelector('.info');
 let infoContainer = document.querySelector('.info-container');
 let closeButton = document.querySelector('.close-button');
+let checkButton = document.querySelector('.check-button');
+let weight = document.querySelector('.weight');
+let height = document.querySelector('.height');
+let dropDown = document.querySelector('.dropDown');
 
-// renderInfoContainer(infoButton, infoContainer, closeButton);
-infoButton.addEventListener('click', (e)=>{
-  infoContainer.classList.add('show-info-container')
-});
+renderInfoContainer(infoButton, infoContainer, closeButton);
 
-closeButton.addEventListener('click', ()=>{
-  infoContainer.classList.remove('show-info-container')
-})

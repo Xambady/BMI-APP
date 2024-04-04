@@ -18,6 +18,8 @@ body{
   background-attachment: fixed;
   min-height: 100vh;
   position: relative;
+  padding-top: 60px;
+  box-sizing: border-box;
 }
 
 
@@ -62,7 +64,7 @@ right: 0;
   @include flexCode;
   border-top: 0.2px solid $colorRed;
   border-bottom: 0.2px solid $colorRed;
-  margin-top: 60px;
+  // margin-top: 60px;
   
 }
 
@@ -129,11 +131,11 @@ footer{
  transition: top 0.5s;
 }
 .show-info-container{
-  top: -60px;
+  top: 0;
 }
 
 .close-button{
-//  margin-left: 40vw;
+ margin-left: 35vw;
  background-color: $colorRed;
  color: white;
  width: 70px;

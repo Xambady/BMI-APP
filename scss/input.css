@@ -8,6 +8,8 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   position: relative;
+  padding-top: 60px;
+  box-sizing: border-box;
 }
 
 header {
@@ -49,7 +51,6 @@ header .ownership {
   align-items: center;
   border-top: 0.2px solid rgba(120, 25, 25, 0.901);
   border-bottom: 0.2px solid rgba(120, 25, 25, 0.901);
-  margin-top: 60px;
 }
 
 .input-section {
@@ -124,10 +125,11 @@ footer {
 }
 
 .show-info-container {
-  top: -60px;
+  top: 0;
 }
 
 .close-button {
+  margin-left: 35vw;
   background-color: rgba(120, 25, 25, 0.901);
   color: white;
   width: 70px;

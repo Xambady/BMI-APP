@@ -64,6 +64,9 @@ header .ownership {
   margin-top: 4px;
   outline: none;
 }
+.input-section input::-moz-placeholder {
+  text-align: center;
+}
 .input-section input::placeholder {
   text-align: center;
 }
@@ -72,14 +75,17 @@ header .ownership {
   height: 50px;
   margin-top: 30px;
   background: rgb(78, 144, 168);
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-style: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.492), -2px -2px 10px rgba(0, 0, 0, 0.492);
   font-size: 30px;
 }
 .input-section input::-webkit-outer-spin-button,
 .input-section input::-webkit-outer-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 .input-section select {
   outline: none;
@@ -126,6 +132,4 @@ footer {
   color: white;
   width: 70px;
   text-align: center;
-}
-
-/*# sourceMappingURL=output.css.map */
+}/*# sourceMappingURL=input.css.map */

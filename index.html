@@ -9,19 +9,36 @@
 </head>
 <body>
    <header>
-    <span class="ownership">TRUST-</span> <span>B</span>MI
+
+      <span class="ownership">TRUST-</span> <span class="letter-b">B</span>MI
+    <div class="info">
+      Info
+    </div>
    </header>
    <section class="screen">
     The result displays here.
    </section>
    <section class="input-section">
-<input type="number" placeholder="Your Weight (kg)">
+<input type="text" placeholder="Your Weight (kg)">
 <input type="number" placeholder="Your Height (m)">
-<input type="text">
+<select name="RACE" id="">
+  <option value="">Select Race</option>
+  <option value="Asian">ASIAN</option>
+  <option value="African">African</option>
+  <option value="Asian">ASIAN</option>
+</select>
 <input type="Submit" value="CHECK">
+   </section>
+   <section class="info-container">
+     <article>
+      Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. You should not use this tool if you, or the person you're using it for is under 18 years old, pregnant, has been diagnosed with eating disorder, or have a condition that affects their height.
+     </article>
+     <span class="close-button">Close</span>
    </section>
    <footer>
     copyright@2024
    </footer>
+
+   <script src="script/main.js" type="module"></script>
 </body>
 </html>

@@ -15,7 +15,8 @@ export function renderInfoContainer(infoButton, infoContainer, closeButton){
 //This function collects values from our input and calculate the BMI
 export function calculateBMI(weight, height){
   let result;
-  let heightSquared = height * height;
+  let heightmeter = height * 0.305;
+  let heightSquared = heightmeter * heightmeter;
   result = weight/heightSquared
   return result.toFixed(2);
 

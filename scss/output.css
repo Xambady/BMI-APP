@@ -47,10 +47,31 @@ header .ownership {
 .screen {
   height: 350px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-top: 0.2px solid rgba(120, 25, 25, 0.901);
   border-bottom: 0.2px solid rgba(120, 25, 25, 0.901);
+}
+.advice{
+  width: 60vw;
+}
+
+.screen > p{
+  text-align: center;
+}
+
+.result-display{
+  color: green;
+  font-size: 30px;
+}
+.result-display-red{
+  color: red;
+  font-size: 30px;
+}
+.result-display-pink{
+  color: rgb(246, 59, 59);
+  font-size: 30px;
 }
 
 .input-section {
@@ -115,7 +136,7 @@ footer {
   width: 100vw;
   padding: 20px 20px;
   box-sizing: border-box;
-  transition: top 0.5s;
+  transition: top 0.7s ease-out;
 }
 
 .show-info-container {
